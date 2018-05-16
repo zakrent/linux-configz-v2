@@ -10,6 +10,11 @@ ln -rs ./.config/terminator ~/.config/terminator
 #mutt 
 ln -rs ./.mutt ~/.mutt
 
+#scripts
+ln -rs ./.scripts ~/.scripts
+
+#rcs
+
 ln -rs ./.vimrc ~/.vimrc
 ln -rs ./.xinitrc ~/.xinitrc
 ln -rs ./zshrc ~/.zshrc

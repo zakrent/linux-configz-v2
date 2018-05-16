@@ -10,6 +10,9 @@ rm ~/.config/terminator
 #mutt 
 rm ~/.mutt
 
+#scripts
+rm ~/.scripts
+
 rm ~/.vimrc
 rm ~/.xinitrc
 rm ~/.zshrc
