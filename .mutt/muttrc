@@ -1,0 +1,60 @@
+source "gpg -d ~/.mutt/passwords.gpg |"
+source ~/.mutt/gpg.rc
+
+set editor = vim
+set sort = "reverse-date"
+set mailcap_path = "~/mailcap"
+
+set index_format="%2C %Z %D %-15.15F %s (%c)"
+set date_format="%d %B %Y %I:%M"
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+#GMAIL STUFF
+set imap_user="szymon.zakrent@gmail.com"
+set smtp_url="smtp"
+set folder="imaps://imap.gmail.com:993"
+set spoolfile=+INBOX
+set postponed = +[Gmail]/Drafts
+
+set smtp_url=smtps://szymon.zakrent@smtp.gmail.com
+set realname="Szymon Zakrent"
+set from="szymon.zakrent@gmail.com"
+set signature="Szymon Zakrent"
+
+#CACHE
+set header_cache = ~/.cache/mutt
+
+#IMAP MAIL CHECK
+unset imap_passive
+set imap_keepalive = 300
+set imap_check_subscribed
+set mail_check = 20
+
+#COLORS
+color index yellow default '.*'
+color normal white default
+color quoted brightwhite default
+color hdrdefault cyan black
+color attachment brightcyan black
+color status yellow default
+color index_author red default '.*' 
+color index_number blue default
+color index_subject cyan default '.*'
+color index_size green default
+color index_flags green default '.*'
+color body brightyellow default (https?|ftp):\/\/[^" "\n]+
+
+color body brightgreen default 'gpg: Good signature.*'
+color body red default "gpg: Bad signature from.*"
+color body red default "gpg: BAD signature from.*"
+color body red default "gpg: Note: This key has expired!"
+color body brightmagenta default "gpg: Problem signature from.*"
+color body brightmagenta default "gpg: WARNING: This key is not certified with a trusted signature!"
+color body brightmagenta default "gpg:          There is no indication that the signature belongs to the owner."
+color body brightmagenta default "gpg: can't handle these multiple signatures"
+color body brightmagenta default "gpg: signature verification suppressed"
+color body brightmagenta default "gpg: invalid node with packet of type"
+
+
