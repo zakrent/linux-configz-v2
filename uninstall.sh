@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #i3
-rm -rf ~/.config/i3
+rm ~/.config/i3
 rm ~/.config/.i3blocks.conf
 
 #terminator
-rm -rf  ~/.config/terminator
+rm ~/.config/terminator
 
 #mutt 
-rm -rf ~/.mutt
+rm ~/.mutt
 
 rm ~/.vimrc
 rm ~/.xinitrc
