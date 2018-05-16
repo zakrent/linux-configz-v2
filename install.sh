@@ -17,6 +17,6 @@ ln -rs ./.scripts ~/.scripts
 
 ln -rs ./.vimrc ~/.vimrc
 ln -rs ./.xinitrc ~/.xinitrc
-ln -rs ./zshrc ~/.zshrc
+ln -rs ./.zshrc ~/.zshrc
 
 
