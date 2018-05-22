@@ -16,5 +16,6 @@ rm ~/.scripts
 rm ~/.vimrc
 rm ~/.xinitrc
 rm ~/.zshrc
+rm ~/.gtkrc
 
 
