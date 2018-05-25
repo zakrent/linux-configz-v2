@@ -155,6 +155,9 @@ bar {
 
 bindsym $mod+x exec "i3lock -f"
 
+exec compton -CGb --no-fading-openclose
+exec hsetroot -solid "#000000"
+
 exec xss-lock -- i3lock
 exec falkon
 exec steam-runtime
