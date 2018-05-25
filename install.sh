@@ -20,4 +20,9 @@ ln -rs ./.gtkrc ~/.gtkrc
 ln -rs ./.xinitrc ~/.xinitrc
 ln -rs ./.zshrc ~/.zshrc
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+curl -fLo ~/.vim/.ycm_extra_conf.py --create-dirs \
+	https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py
 

@@ -18,4 +18,5 @@ rm ~/.xinitrc
 rm ~/.zshrc
 rm ~/.gtkrc
 
-
+rm -rf ~/.vim/autoload
+rm ~/.vim/.ycm_extra_conf.py
