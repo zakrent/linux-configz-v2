@@ -2,12 +2,13 @@
 
 IF=$BLOCK_INSTANCE
 
-res=$(ip addr show dev $IF primary | grep DOWN | wc -l)
+res=$(cat /sys/class/net/$IF/operstate)
 
 echo $1 
 echo $1
-if [[ $res -ne 0 ]]; then
-	echo \#FF0000
-else
+
+if [ ! -z $res ] && [[ $res -eq "up" ]]; then
 	echo \#00FF00
+else 
+	echo \#FF0000
 fi
