@@ -72,7 +72,7 @@ bindsym $mod+a focus parent
 assign [class="Falkon"] 1 Falkon
 assign [class="Steam"] 9 Steam
 assign [class="discord"] 8 Discord
-assign [window_role="neomutt"] 10 Mutt
+assign [class="neomutt"] 10 Mutt
 
 # switch to workspace
 bindsym $mod+1 workspace 1 Falkon
@@ -158,7 +158,7 @@ bindsym $mod+x exec "i3lock -f"
 exec xss-lock -- i3lock
 exec falkon
 exec steam-runtime
-exec terminator -r neomutt -x neomutt
+exec st -c neomutt -e neomutt
 exec ~/.scripts/battery.sh
 exec discord
 
