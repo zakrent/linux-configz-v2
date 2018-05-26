@@ -141,7 +141,7 @@ client.urgent           $urg-bg-col       $urg-bg-col      $text-col      #00ff0
 # finds out, if available)
 bar {
         status_command i3blocks -c ~/.config/.i3blocks.conf
-	font pango:ProFont 8, FontAwesome 8
+	font pango:ProFont, FontAwesome 10
 	colors {
 		background  $bg-col
 		statusline  $text-col
