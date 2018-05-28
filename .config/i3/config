@@ -166,9 +166,9 @@ exec st -c neomutt -e neomutt
 exec ~/.scripts/battery.sh
 exec discord
 
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master 5%-
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ && exec pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec amixer set Master 5%- && exec pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioMute exec amixer set Master toggle && exec pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioMicMute exec amixer set Capture toggle
 bindsym XF86MonBrightnessDown exec light -Up 5
 bindsym XF86MonBrightnessUp exec light -Ap 5
