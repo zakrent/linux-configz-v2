@@ -17,6 +17,7 @@ rm ~/.vimrc
 rm ~/.xinitrc
 rm ~/.zshrc
 rm ~/.gtkrc
+rm ~/wallpaper.jpg
 
 rm -rf ~/.vim/autoload
 rm ~/.vim/.ycm_extra_conf.py

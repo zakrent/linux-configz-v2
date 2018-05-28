@@ -157,7 +157,7 @@ bar {
 bindsym $mod+x exec "i3lock -f"
 
 exec compton -CGb --no-fading-openclose
-exec hsetroot -solid "#000000"
+exec hsetroot -fill ~/wallpaper.jpg
 
 exec xss-lock -- i3lock
 exec falkon
