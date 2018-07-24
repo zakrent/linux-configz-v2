@@ -10,6 +10,11 @@ rm ~/.config/terminator
 #mutt 
 rm ~/.mutt
 
+#music
+rm ~/.config/mpd
+rm ~/.ncmpcpp
+rm ~/.mpd
+
 #scripts
 rm ~/.scripts
 

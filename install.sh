@@ -13,6 +13,11 @@ ln -rs ./mutt ~/.mutt
 #scripts
 ln -rs ./scripts ~/.scripts
 
+#music
+ln -rs ./config/mpd ~/.config/mpd
+ln -rs ./ncmpcpp ~/.ncmpcpp
+mkdir ~/.mpd
+
 #rcs
 
 ln -rs ./vimrc ~/.vimrc

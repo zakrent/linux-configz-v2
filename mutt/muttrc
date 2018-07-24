@@ -3,7 +3,7 @@ source ~/.mutt/gpg.rc
 
 set editor = vim
 set sort = "reverse-date"
-set mailcap_path = "~/mailcap"
+set mailcap_path = "~/.mutt/mailcap"
 
 set index_format="%2C %Z %D %-15.15F %s (%c)"
 set date_format="%d %B %Y %I:%M"
