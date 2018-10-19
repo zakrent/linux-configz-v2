@@ -73,7 +73,9 @@ assign [class="Falkon"] 1 Falkon
 assign [class="Steam"] 9 Steam
 assign [class="discord"] 8 Discord
 assign [class="neomutt"] 10 Mutt
+assign [class="Thunderbird"] 10 Mutt
 assign [class="ncmpcpp"] 7 Ncmpcpp
+assign [class="keepassxc"] 6
 
 # switch to workspace
 bindsym $mod+1 workspace 1 Falkon
@@ -162,9 +164,10 @@ exec hsetroot -fill ~/wallpaper.jpg
 exec udiskie
 
 exec xss-lock -- i3lock
-exec falkon
+#exec falkon
+exec thunderbird
 exec steam-runtime
-exec st -c neomutt -e neomutt
+#exec st -c neomutt -e neomutt
 exec st -c ncmpcpp -e ncmpcpp
 exec ~/.scripts/battery.sh
 exec discord
