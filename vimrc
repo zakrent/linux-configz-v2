@@ -7,6 +7,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang' }
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-airline/vim-airline'
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
@@ -19,9 +20,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+
+colorscheme slate
 set splitbelow
 set splitright
 
-colorscheme slate
 set relativenumber
 syntax on

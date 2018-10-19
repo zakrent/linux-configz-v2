@@ -159,6 +159,7 @@ bindsym $mod+x exec "i3lock -f"
 
 exec compton -CGb --no-fading-openclose
 exec hsetroot -fill ~/wallpaper.jpg
+exec udiskie
 
 exec xss-lock -- i3lock
 exec falkon
@@ -167,6 +168,7 @@ exec st -c neomutt -e neomutt
 exec st -c ncmpcpp -e ncmpcpp
 exec ~/.scripts/battery.sh
 exec discord
+exec keepassxc
 
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ && exec pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec amixer set Master 5%- && exec pkill -SIGRTMIN+10 i3blocks
