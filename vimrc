@@ -8,6 +8,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'dylanaraps/wal.vim'
+Plug 'bagrat/vim-workspace'
 
 call plug#end()
 
@@ -22,6 +23,11 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+
+let g:workspace_powerline_separators = 1
+let g:workspace_tab_icon = "\uf00a"
+let g:workspace_left_trunc_icon = "\uf0a8"
+let g:workspace_right_trunc_icon = "\uf0a9"
 
 colorscheme slate
 set splitbelow

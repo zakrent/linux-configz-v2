@@ -1,3 +1,3 @@
 export TERMINAL="st"
 setxkbmap pl
-exec i3
+exec startlxqt
