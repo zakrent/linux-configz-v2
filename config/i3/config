@@ -18,9 +18,6 @@ bindsym --release $mod+button1 kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-# thin borders
-hide_edge_borders both
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -54,9 +51,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -134,10 +131,10 @@ set $urg-bg-col      #E53935
 
 # window colors
 #                       border              background     text           indicator
-client.focused          $bg-col           $bg-col          $text-col      #00ff00
-client.unfocused        $inac-bg-col      $inac-bg-col     $inac-text-col #00ff00
-client.focused_inactive $inac-bg-col      $inac-bg-col     $inac-text-col #00ff00
-client.urgent           $urg-bg-col       $urg-bg-col      $text-col      #00ff00
+client.focused          $bg-col           $bg-col          $text-col      $bg-col
+client.unfocused        $inac-bg-col      $inac-bg-col     $inac-text-col $inac-bg-col
+client.focused_inactive $inac-bg-col      $inac-bg-col     $inac-text-col $inac-bg-col
+client.urgent           $urg-bg-col       $urg-bg-col      $text-col      $urg-bg-col
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -157,6 +154,16 @@ client.urgent           $urg-bg-col       $urg-bg-col      $text-col      #00ff0
 #
 #}
 
+#Gaps setup
+gaps inner 10
+gaps outer 10
+
+for_window [class="^.*"] border pixel 2
+
+bindsym $mod+z gaps outer current plus 10
+bindsym $mod+Shift+z gaps outer current minus 10
+
+#
 bindsym $mod+x exec "i3lock -f"
 
 exec compton -CGb --no-fading-openclose
